@@ -86,7 +86,7 @@ function App() {
                             path="/new-story"
                             element={<NewStory posts={postData} />}
                         ></Route>
-                        <Route path="/*" element={<NotFound />}></Route>
+                        <Route path="/*" element={<Feed posts={postData} />}></Route>
                     </Routes>
                 </>
             </Router>
