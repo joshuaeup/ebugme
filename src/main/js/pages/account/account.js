@@ -29,6 +29,7 @@ const Account = (props) => {
             <div id="account">
                 {/* Render the Form function declared above */}
                 <Form />
+                <div>Hello world</div>
             </div>
         </>
     );
