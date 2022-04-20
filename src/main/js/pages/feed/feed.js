@@ -4,9 +4,10 @@ import Navigation from "../../components/navigation/navigation";
 import NewWriter from "../../components/newWriter/newWriter";
 import Post from "../../components/post/post";
 import { getStorageValue } from "../../utils/useLocalStorage";
+import posts from "../../post-data";
 
 const Home = (props) => {
-    const [posts, setPosts] = useState(props.posts);
+    const [posts, setPosts] = useState([]);
 
     // Function that triggers as soon as the page loads
     useEffect(() => {
@@ -22,8 +23,9 @@ const Home = (props) => {
         <>
             <Navigation title="LOGO " />
             <div id="home">
-                <div>
+                <div >
                     {/* Displays the posts stored in the posts state variable */}
+                    
                     <Link
                         to={`/story/${props.posts[0].id}`}
                         key={props.posts[0].id}

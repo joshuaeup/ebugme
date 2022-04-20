@@ -397,15 +397,15 @@
 }
 
 #post {
-  background-color: #ffffff;
-  margin: 2rem 0;
-  padding: 1rem 2rem;
+  background-color: lightskyblue;
+  margin: 3rem 0 ;
+  padding:20px;
   display: -ms-grid;
   display: grid;
   grid-gap: 6rem;
   -ms-grid-columns: 1fr auto;
       grid-template-columns: 1fr auto;
-  border-radius: 2px;
+  border-radius: 10px;
   -webkit-transition: 0.2s ease-in all;
   transition: 0.2s ease-in all;
 }
@@ -486,14 +486,14 @@
 }
 
 #post .post__column:nth-child(1) {
-  -ms-grid-rows: 2rem;
-      grid-template-rows: 2rem;
+  -ms-grid-rows: 1rem;
+      grid-template-rows: 3rem;
 }
 
 @media only screen and (max-width: 1250px) {
   #post {
-    -ms-grid-columns: 2fr 1fr;
-        grid-template-columns: 2fr 1fr;
+    width: 200px;
+        
   }
   #post .post__column:nth-child(2) {
     width: auto;
